@@ -22,7 +22,6 @@ Of course, there need to be servers listening on those ports
 for that to work.
 """
 
-
     parser = optparse.OptionParser(usage)
 
     _, addresses = parser.parse_args()
@@ -47,7 +46,7 @@ for that to work.
 
 
 def get_poetry(sockets):
-    """Download poety from all the given sockets."""
+    """Download poetry from all the given sockets."""
 
     poems = dict.fromkeys(sockets, '') # socket -> accumulated poem
 
